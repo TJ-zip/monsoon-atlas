@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monsoon Atlas — three living pieces</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stage" aria-label="Generative artwork"></canvas>
+
+<header class="plate">
+  <p class="kicker">Monsoon Atlas</p>
+  <h1 id="title">Tide</h1>
+  <p id="verse" class="verse"></p>
+</header>
+
+<nav class="dock" aria-label="Pieces">
+  <button type="button" data-piece="tide" class="on">I · Tide</button>
+  <button type="button" data-piece="loom">II · Loom</button>
+  <button type="button" data-piece="monsoon">III · Monsoon</button>
+  <span class="sep"></span>
+  <button type="button" id="reseed" title="New seed (R)">↻ Reseed</button>
+  <button type="button" id="save" title="Save PNG (S)">⤓ Save</button>
+</nav>
+
+<p class="seed">seed <span id="seedval"></span> · move, click, press space to pause</p>
+
+<script src="art.js"></script>
+</body>
+</html>
